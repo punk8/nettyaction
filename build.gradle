@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+}
+
+group 'com.punk.nettyaction'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+// 定义全局变量
+ext {
+    slf4j_version = '1.7.25'
+    log4j2_version = '2.11.1'
+    logback_version = '1.2.3'
+}
+
+// 全局排除依赖
+configurations {
+    // 支持通过group、module排除，可以同时使用
+    all*.exclude group: 'commons-logging', module: 'commons-logging' // common-logging
+    all*.exclude group: 'log4j', module: 'log4j' // log4j
+    all*.exclude group: 'org.apache.logging.log4j', module: 'log4j-core' // slf4j -> log4j2
+    all*.exclude group: 'org.apache.logging.log4j', module: 'log4j-slf4j-impl' // log4j2
+    all*.exclude group: 'org.slf4j', module: 'slf4j-jdk14' // slf4j -> jdk-logging
+    all*.exclude group: 'org.slf4j', module: 'slf4j-jcl' // slf4j -> common-logging
+    all*.exclude group: 'org.slf4j', module: 'slf4j-log4j12' // slf4j -> log4j
+}
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    // https://mvnrepository.com/artifact/io.netty/netty-all
+    compile group: 'io.netty', name: 'netty-all', version: '4.1.36.Final'
+
+
+    compile "org.slf4j:slf4j-api:$slf4j_version"
+    compile "org.slf4j:jul-to-slf4j:$slf4j_version"
+    compile "org.slf4j:jcl-over-slf4j:$slf4j_version"
+    compile "org.slf4j:log4j-over-slf4j:$slf4j_version"
+    compile "org.apache.logging.log4j:log4j-api:$log4j2_version"
+    compile "org.apache.logging.log4j:log4j-to-slf4j:$log4j2_version"
+    compile "ch.qos.logback:logback-classic:$logback_version"
+}
