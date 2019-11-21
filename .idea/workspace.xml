@@ -2,29 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f017018-b167-4052-a4b7-3d81ce28df6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/IM1/CustomHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IM1/CustomforClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IM1/HelloServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IM1/HelloServerInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IM1/HelloServerforClientInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IM2/Handler/ChatHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IM2/Handler/WebSocketinitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IM2/WebSocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IM2/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IM3/Config/Handler/WebSocketHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IM3/Config/NettyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IMdemo/Client/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IMdemo/Client/IMDemoClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IMdemo/IMDemoServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IMdemo/IMInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IMdemo/ServerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/IMdemo/ServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/IMdemo/ServerHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IMdemo/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IMdemo/ServerHandler.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574094023393</updated>
       <workItem from="1574094025333" duration="1795000" />
-      <workItem from="1574130016833" duration="10196000" />
+      <workItem from="1574130016833" duration="10661000" />
     </task>
     <servers />
   </component>

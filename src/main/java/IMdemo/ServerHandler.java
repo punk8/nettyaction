@@ -23,22 +23,24 @@ public class ServerHandler extends SimpleChannelInboundHandler {
     public void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception{
         ByteBuf in = (ByteBuf) msg;
         System.out.println("server received : "+in.toString(CharsetUtil.UTF_8));
+        System.out.println("current channel:"+channelClient.size());
 //        ctx.write(msg);//将接收到的信息写给发送者 不冲刷
 
         for (Channel channel : channelClient) {
             //循环对每一个channel对应输出即可（往缓冲区中写，写完之后再刷到客户端）
             //注：writeAndFlush不可以使用String，因为传输的载体是一个TextWebSocketFrame，需要把消息通过载体再刷到客户端
-            channel.writeAndFlush(msg);
+            channel.writeAndFlush(msg+"\r\n");
 
         }
 
+
     }
 
 
 
-    public void channelReadComplete(ChannelHandlerContext ctx){
-        ctx.writeAndFlush(Unpooled.EMPTY_BUFFER).addListener(ChannelFutureListener.CLOSE);//冲刷 并且关闭channel
-    }
+//    public void channelReadComplete(ChannelHandlerContext ctx){
+//        ctx.writeAndFlush(Unpooled.EMPTY_BUFFER).addListener(ChannelFutureListener.CLOSE);//冲刷 并且关闭channel
+//    }
 
     public void exceptionCaught(ChannelHandlerContext ctx,Throwable cause){
         cause.printStackTrace();
