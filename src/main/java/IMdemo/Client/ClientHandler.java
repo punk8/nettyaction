@@ -12,6 +12,10 @@ public class ClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
         System.out.println("Client received:"+msg.toString(CharsetUtil.UTF_8));
     }
 
+    @Override
+    public void channelReadComplete(ChannelHandlerContext ctx){
+        System.out.println("received but dont know what");
+    }
 
     //连接建立成功
     public void channelActive(ChannelHandlerContext ctx){
