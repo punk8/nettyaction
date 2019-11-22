@@ -12,7 +12,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/IMdemo/Client/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/IMdemo/Client/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/IMdemo/ServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/IMdemo/ServerHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/IMdemo/Client/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IMdemo/Client/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/IMdemo/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IMdemo/ServerHandler.java" afterDir="false" />
     </list>
@@ -149,7 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574094023393</updated>
       <workItem from="1574094025333" duration="1795000" />
-      <workItem from="1574130016833" duration="13023000" />
+      <workItem from="1574130016833" duration="13515000" />
     </task>
     <servers />
   </component>

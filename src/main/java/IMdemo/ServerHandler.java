@@ -28,7 +28,7 @@ public class ServerHandler extends SimpleChannelInboundHandler {
         for (Channel channel : channelClient) {
             //循环对每一个channel对应输出即可（往缓冲区中写，写完之后再刷到客户端）
             //注：writeAndFlush不可以使用String，因为传输的载体是一个TextWebSocketFrame，需要把消息通过载体再刷到客户端
-            channel.writeAndFlush(((ByteBuf) msg).retain());
+            channel.writeAndFlush(((ByteBuf) msg).retain()); //不用retain的话writeandflush一次后就release了
 //            channel.writeAndFlush(Unpooled.EMPTY_BUFFER);
 
 

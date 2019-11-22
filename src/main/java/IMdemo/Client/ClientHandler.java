@@ -19,7 +19,7 @@ public class ClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
 
     //连接建立成功
     public void channelActive(ChannelHandlerContext ctx){
-        ctx.writeAndFlush(Unpooled.copiedBuffer("Netty rocks!",CharsetUtil.UTF_8));//连接建立成功后发送一条信息
+        ctx.writeAndFlush(Unpooled.copiedBuffer("client登陆",CharsetUtil.UTF_8));//连接建立成功后发送一条信息
     }
 
     public void exceptionCaught(ChannelHandlerContext ctx,Throwable cause){
